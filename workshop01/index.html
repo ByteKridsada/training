@@ -16,27 +16,31 @@
             background-color: #d5e1ef;
         }
         .card {
+            max-height: 70vh;
+            min-height: 250px;
             max-width: 250px;
-            max-height: 450px;
+            min-width: 100px;
             padding: 12px;
-            padding-bottom: 25px;
             background-color: white;
             display: flex;
             align-items: center;
             border-radius: 12px;
             flex-direction: column;
+            justify-content: space-between;
         }
         .card img {
+            min-width: 100px;
+            min-height: 100px;
             max-width: 100%;
             max-height: 100%;
-            width: 100%;
             border-radius: 9px;
             margin-bottom: 10px;
+            max-height: 25%;
         }
         .txt-base {
             font-family: 'Outfit', sans-serif;
             text-align: center;
-            margin: 14px;
+            margin: 4%;
         }
         .txt-title {
             color: #333;
@@ -53,7 +57,7 @@
 <body>
     <div class="card">
         <img src="images/image-qr-code.png" alt="QR Image">
-        <p class="txt-base txt-title ">Improve your front-end skills by building project</p>
+        <p class="txt-base txt-title">Improve your front-end skills by building project</p>
         <p class="txt-base txt-desc">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
     </div>
 </body>
