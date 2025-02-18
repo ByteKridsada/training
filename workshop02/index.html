@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Sigmar', cursive;
+        }
+
+        body {
+            background: url('https://png.pngtree.com/thumb_back/fw800/background/20230718/pngtree-the-excitement-of-online-gaming-featuring-playing-cards-balls-and-golden-image_3912399.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section {
+            width: 100%;
+        }
+
+        .top-section {
+            padding: 10px;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            background: rgba(255, 140, 95, 0.8);
+        }
+
+        .top-section-1 {
+            height: 80%;
+            display: flex;
+            /* background: rgba(252, 168, 135, 0.8); */
+        }
+
+        .box-container {
+            display: flex;
+            width: 100%;
+        }
+
+        .box {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.3);
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+
+        .box img {
+            width: 80%;
+            height: auto;
+            max-height: 70%;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .top-section-2 {
+            padding: 20px;
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .bottom-section {
+            height: 20vh;
+            background: rgba(84, 32, 108, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            font-size: 1.5rem;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .button-container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 10px;
+            border-width: 4px;
+            border-color: rgb(255, 174, 99);
+            background-color: salmon;
+        }
+
+        .button-submit {
+            border-color: rgb(99, 255, 211);
+            background-color: rgb(6, 203, 180);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="section top-section">
+        <div class="top-section-1">
+            <div class="box-container">
+                <div class="box">
+                    <img src="assets/images/dice.png" alt="Dice 1">
+                    <span>Dice 1</span>
+                </div>
+                <div class="box">
+                    <img src="assets/images/dice.png" alt="Dice 2">
+                    <span>Dice 2</span>
+                </div>
+                <div class="box">
+                    <img src="assets/images/dice.png" alt="Dice 3">
+                    <span>Dice 3</span>
+                </div>
+            </div>
+        </div>
+        <div class="top-section-2">Game Info Section</div>
+    </div>
+    <div class="section bottom-section">
+        <label>Your score: ...</label>
+        <div class="button-container">
+            <button>High</button>
+            <button>Mid</button>
+            <button>Low</button>
+            <button class="button-submit">GO !!</button>
+        </div>
+    </div>
+</body>
+</html>
