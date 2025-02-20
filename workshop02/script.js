@@ -41,7 +41,7 @@ function getDiceResult() {
     setText(document.getElementById("txt-dice2"),dice2);
     setText(document.getElementById("txt-dice3"),dice3);
 
-    return result < 8 ? -1 : result === 8 ? 0 : 1;
+    return result < 11 ? -1 : result === 11 ? 0 : 1;
 }
 
 function setScore(result, pointBet) {
